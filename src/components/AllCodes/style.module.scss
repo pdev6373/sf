@@ -1,0 +1,124 @@
+.section4 {
+    margin-top: 1.8rem;
+    height: 100%;
+    background-color: white;
+    padding: 1rem 1rem;
+    // border: 2px solid blue;
+    max-height: 20rem;
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: red;
+        max-height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #F1F1FE;
+        width: 6px;
+        max-height: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #2222B5;
+        width: 9px;
+        max-height: 4px;
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #C4C2C2;
+        padding-bottom: 1rem;
+
+        h1 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.63px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22.63px;
+            text-align: right;
+            color: #000000;
+        }
+    }
+
+    .middle {
+        margin-bottom: 1rem;
+
+        .formInput {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+
+            input {
+                background-color: #F6F6F9;
+                width: 100%;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                outline-style: none;
+            }
+
+            h1 {
+                color: #13111F;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22.63px;
+                text-align: left;
+            }
+        }
+    }
+
+    .bottom {
+
+
+        .tableColomn {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-right: .5rem;
+            margin-top: 1rem;
+            // border: 1px solid red;
+            max-height: 20rem;
+            overflow-y: scroll;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600;
+
+            .row2 {
+                width: 5rem;
+                margin-right: .8rem;
+            }
+
+            .row3 {
+                width: 5rem;
+                padding-right: 3rem;
+            }
+        }
+
+        .colomn {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            cursor: pointer;
+            span {
+                padding: .2rem .5rem;
+                // background-color: red;
+                color: white;
+                width: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}

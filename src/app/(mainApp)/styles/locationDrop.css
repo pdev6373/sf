@@ -1,0 +1,105 @@
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 335px;
+  /* border-radius: 8px; */
+  /* background: red; */
+  /* border: 1px solid #e5e5e5; */
+  outline: none;
+  height: 48px;
+  color: #98a2b3;
+  padding-bottom: -200px;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  /* border-radius: 8px; */
+  background: #f6f6f9;
+  /* background-color: red; */
+  /* border: 1px solid #e5e5e5; */
+  outline: none;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  text-align: left;
+  color: black;
+}
+
+.dropdown-header.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  background: var(--material-theme-sys-light-background, #fdfbff);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  color: #98a2b3;
+  z-index: 100000;
+}
+
+.dropdown-option {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+  /* Added transition property */
+}
+
+.dropdown-header.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}

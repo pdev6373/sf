@@ -1,0 +1,141 @@
+.qrcode_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    padding-left: 18rem;
+    width: 100%;
+    height: 11rem;
+    
+}
+
+.qrcode_card_container{
+    display: flex;
+    gap: 2rem;
+
+    .qrcode_card{
+        max-width: 254.93px;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0px 2px 6px 0px #0D0A2C14;
+        
+        .qrcode_card_title{
+            color: #1E1B39;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .qrcode_card_count{
+            font-size: 44px;
+            font-weight: 700;
+            color: #1E1B39;
+        }
+    }
+}
+
+.section4 {
+    margin-top: 1.8rem;
+    height: 100%;
+    background-color: white;
+    padding: 1rem 1rem;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #C4C2C2;
+        padding-bottom: 1rem;
+
+        h1 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.63px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22.63px;
+            text-align: right;
+            color: #000000;
+        }
+    }
+
+    .middle {
+        margin-bottom: 1rem;
+
+        .formInput {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+
+            input {
+                background-color: #F6F6F9;
+                width: 100%;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                outline-style: none;
+            }
+
+            h1 {
+                color: #13111F;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22.63px;
+                text-align: left;
+            }
+        }
+    }
+
+    .bottom {
+
+
+        .tableColomn {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-right: .5rem;
+            margin-top: 1rem;
+            // border: 1px solid red;
+            max-height: 20rem;
+            overflow-y: scroll;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600;
+
+            .row2 {
+                width: 5rem;
+                margin-right: .8rem;
+            }
+
+            .row3 {
+                width: 5rem;
+                padding-right: 3rem;
+            }
+        }
+
+        .colomn {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            span {
+                padding: .2rem .5rem;
+                // background-color: red;
+                color: white;
+                width: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
