@@ -1,27 +1,27 @@
-
-import AzureADB2CProvider from "next-auth/providers/azure-ad-b2c";
+import AzureADB2CProvider from 'next-auth/providers/azure-ad-b2c';
 
 export const authOptions = {
   pages: {
-    signIn: "/", // Custom sign in page
+    signIn: '/', // Custom sign in page
   },
   session: {
-    strategy: "jwt",
+    strategy: 'jwt',
   },
   providers: [
     AzureADB2CProvider({
       tenantId: process.env.NEXT_PUBLIC_AZURE_AD_B2C_TENANT_NAME,
-      clientId: process.env.NEXT_PUBLIC_AZURE_AD_B2C_CLIENT_ID || "",
-      clientSecret: process.env.AZURE_AD_B2C_CLIENT_SECRET || "",
+      clientId: process.env.NEXT_PUBLIC_AZURE_AD_B2C_CLIENT_ID || '',
+      clientSecret: process.env.AZURE_AD_B2C_CLIENT_SECRET || '',
       primaryUserFlow: process.env.NEXT_PUBLIC_AZURE_AD_B2C_PRIMARY_USER_FLOW,
       authorization: {
         params: {
-          scope: "offline_access openid",
+          scope: 'offline_access openid',
+          redirect_uri: 'https://sf-navy.vercel.app',
         },
       },
-      checks: ["pkce"],
+      checks: ['pkce'],
       client: {
-        token_endpoint_auth_method: "none",
+        token_endpoint_auth_method: 'none',
       },
     }),
   ],
