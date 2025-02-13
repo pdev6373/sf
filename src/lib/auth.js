@@ -16,7 +16,6 @@ export const authOptions = {
       authorization: {
         params: {
           scope: 'offline_access openid',
-          redirect_uri: 'https://sf-navy.vercel.app',
         },
       },
       checks: ['pkce'],

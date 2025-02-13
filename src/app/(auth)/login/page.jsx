@@ -11,7 +11,6 @@ export default function Login() {
       setIsLoading(true);
       await signIn('azure-ad-b2c', {
         callbackUrl: '/',
-        redirect: 'https://sf-navy.vercel.app',
       });
     } catch (error) {
       console.error('Authentication error:', error);
